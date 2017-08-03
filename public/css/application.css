@@ -1,0 +1,9 @@
+header {
+  height: 80px;
+  position: relative;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 1%;
+}
