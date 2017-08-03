@@ -1,5 +1,5 @@
 get '/' do
-  redirect '/restaurants'
+  redirect '/trips/new'
 end
 
 get '/unauthorized' do

@@ -1,4 +1,4 @@
-header {
+body > #header {
   height: 80px;
   position: relative;
   font-family: 'Cairo', sans-serif;
@@ -6,4 +6,22 @@ header {
 
 body {
   margin: 1%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding-left: 10px;
+  display: inline-block;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
 }
