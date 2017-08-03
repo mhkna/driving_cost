@@ -6,9 +6,8 @@ post '/sessions' do
   @user = User.authenticate(params[:email], params[:password])
   if @user
     session[:user_id] = @user.id
-    redirect "/restaurants"
+    redirect "/"
   else
-    status 422
     @errors = ["Login failed"]
     erb :'sessions/new'
   end
