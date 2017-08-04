@@ -5,9 +5,7 @@ end
 
 post '/trips' do
   @trip = Trip.new(params[:trip])
-  p @trip.request
-  p "HERE   " * 200
-  p @trip.distance
+  # p "right here  " * 90
   if @trip.save
     redirect "/trips/#{@trip.id}"
   else
