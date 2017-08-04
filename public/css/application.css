@@ -1,6 +1,5 @@
 body > #header {
   height: 80px;
-  position: relative;
   font-family: 'Cairo', sans-serif;
 }
 
@@ -24,4 +23,8 @@ nav li {
 nav li a {
   text-decoration: none;
   color: black;
+}
+
+.map {
+  width: 400px;
 }

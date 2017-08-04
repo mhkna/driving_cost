@@ -1,0 +1,18 @@
+
+<p>Your trip to <b><%= @trip.destination.split(',')[0] %></b></p>
+
+<div id="trip_container">
+  <div class="trip_text">
+    Cost to driver
+    <h2>$<%= @trip.total_cost %></h2>
+  </div>
+    <!-- after taxes, insurance, deprecation, phone data, maintenance, Uber's cut -->
+  <div class="trip_text">
+    Fare
+    <h2>$$</h2>
+  </div>
+  <div class="trip_text">
+    Difference
+    <h2>$$ - $<%= @trip.total_cost %></h2>
+  </div>
+</div>
