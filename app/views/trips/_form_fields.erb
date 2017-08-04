@@ -3,12 +3,12 @@
   <div>
     <label for="origin">Origin:</label>
     <br>
-    <input type="text" name="trip[origin]" value="<%= @trip.try(:origin) %>">
+    <input type="text" name="trip[origin]" value="<%= @trip.origin %>">
   </div>
   <div>
     <label for="destination">Destination:</label>
     <br>
-    <input type="text" name="trip[destination]" value="<%= @trip.try(:destination) %>">
+    <input type="text" name="trip[destination]" value="<%= @trip.destination %>">
   </div>
 </div>
 <h3>Car</h3>
@@ -16,16 +16,16 @@
   <div>
     <label for="car_make">Make:</label>
     <br>
-    <input type="text" name="trip[car_make]" value="<%= @trip.try(:car_make) %>">
+    <input type="text" name="trip[car_make]" value="<%= @trip.car_make %>">
   </div>
   <div>
     <label for="car_model">Model:</label>
     <br>
-    <input type="text" name="trip[car_model]" value="<%= @trip.try(:car_model) %>">
+    <input type="text" name="trip[car_model]" value="<%= @trip.car_model %>">
   </div>
   <div>
     <label for="car_year">Year:</label>
     <br>
-    <input type="text" name="trip[car_year]" value="<%= @trip.try(:car_year) %>">
+    <input type="text" name="trip[car_year]" value="<%= @trip.car_year %>">
   </div>
 </div>
