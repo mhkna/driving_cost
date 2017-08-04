@@ -9,7 +9,7 @@ class Trip < ActiveRecord::Base
   end
 
   def distance_request
-    uri = URI.parse("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=#{self.origin}&destinations=#{self.destination}&key=AIzaSyDfm8i0_7HPod93ZbI10qXLoVE3_nSbYcM")
+    uri = URI.parse("https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=#{self.origin}&destinations=#{self.destination}&key=#{ENV["GOOGLE_DISTANCE_TOKEN"]}")
     response = Net::HTTP.get(uri)
     response_hash = JSON.parse(response)
     distance = response_hash["rows"][0]["elements"][0]["distance"]["text"]
